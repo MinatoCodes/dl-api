@@ -1,0 +1,3 @@
+fastapi
+uvicorn
+btch-downloader==4.0.15
