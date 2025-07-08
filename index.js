@@ -7,7 +7,7 @@ const {
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get("/api/download", async (req, res) => {
+app.get("/api/alldl", async (req, res) => {
   const { url } = req.query;
   if (!url) {
     return res.status(400).json({
@@ -41,7 +41,7 @@ app.get("/api/download", async (req, res) => {
     } else {
       return res.status(400).json({
         success: false,
-        message: "Unsupported platform"
+        message: "Unsupported platform.. Supported platforms (tiktok, youtube, facebook, instagram, capcut, mediafire, google drive, pinterest and twitter)"
       });
     }
 
